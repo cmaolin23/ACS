@@ -8,7 +8,6 @@ This repository presents a comprehensive framework for studying adversarial atta
 
 - **Comprehensive Vulnerability Analysis**: Systematic evaluation of adversarial attacks against multiple learning-based community search architectures
 - **Unified Attack Framework**: Implementation of the EVA (Evasion Attack) framework with reinforcement learning-based edge perturbation strategies
-- **Defense Mechanisms**: Development and evaluation of robust detection algorithms and defensive strategies against adversarial perturbations
 - **Multi-Dataset Evaluation**: Support for 8+ real-world social network and citation network datasets
 - **Comparative Benchmarking**: Extensive experimental comparison across multiple baseline models and attack scenarios
 
@@ -198,7 +197,7 @@ The framework evaluates models using:
 - **Precision/Recall**: Per-class prediction quality
 - **F1-Score**: Harmonic mean of precision and recall
 - **Attack Success Rate**: Percentage of successful adversarial perturbations
-- **Robustness Score**: Model resilience under attack
+
 
 ## Experimental Results
 
@@ -211,41 +210,19 @@ Models are evaluated on:
 ## Key Findings
 
 - GNN-based community search models are vulnerable to targeted adversarial attacks
-- Defense mechanisms can improve robustness with modest performance trade-offs
 - Attack effectiveness varies significantly across different community structures
 - Ensemble methods provide improved robustness compared to single models
 
-## Contributing
-
-Contributions are welcome! Please follow these guidelines:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## References
 
-### Key Papers
+### Keywords
 
-- Community Detection in Networks
+- Community Search in Networks
 - Graph Neural Networks  
 - Adversarial Attacks on Graphs
 - Robustness of GNNs
 
-## Citation
-
-If you use this code in your research, please cite:
-
-```bibtex
-@software{attack_community_search_2024,
-  title={Attack on Learning-Based Community Search},
-  author={Your Name},
-  year={2024},
-  url={https://github.com/yourusername/Attack-on-Learning-Based-Community-Search}
-}
-```
 
 ## License
 
@@ -257,30 +234,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - SNAP database for providing benchmark network datasets
 - All researchers who contributed to community detection and adversarial robustness literature
 
-## Contact
-
-For questions, issues, or collaborations, please contact:
-- Open an issue on GitHub
-- [Your email]
-- [Your institution/affiliation]
-
-## FAQ
-
-**Q: How do I add a new dataset?**
-A: Create a new preprocessing script in `data/` following the existing patterns (e.g., `preprocess_amazon.py`), then add the dataset name to the argument parser.
-
-**Q: Can I run this on CPU only?**
-A: Yes, set `--cuda False` in the arguments. However, GPU acceleration is recommended for large networks.
-
-**Q: How are communities defined in your datasets?**
-A: Communities are ground-truth subgraphs provided with benchmark datasets, representing densely-connected node sets.
-
-**Q: What's the computational complexity?**
-A: Complexity depends on model choice and network size. GCN-based models scale as O(|E| × d × L) where |E| is edges, d is feature dimension, L is layers.
 
 ## Changelog
 
-### Version 1.0.0
+### Version 1.1.3
 - Initial release with 7 victim models
 - EVA attack framework
 - Support for 8 benchmark datasets
