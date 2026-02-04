@@ -1,1 +1,0 @@
-# Attack-on-Learning-Based-Community-Search
