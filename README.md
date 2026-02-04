@@ -2,14 +2,7 @@
 
 ## Overview
 
-This repository presents a comprehensive framework for studying adversarial attacks against learning-based community search models in networks. Community search is a fundamental problem in graph analysis, aiming to identify densely connected subgraphs (communities) centered at query nodes. This project systematically investigates the vulnerability of state-of-the-art Graph Neural Network (GNN)-based community detection methods to evasion attacks and proposes robust countermeasures.
-
-## Key Contributions
-
-- **Comprehensive Vulnerability Analysis**: Systematic evaluation of adversarial attacks against multiple learning-based community search architectures
-- **Unified Attack Framework**: Implementation of the EVA (Evasion Attack) framework with reinforcement learning-based edge perturbation strategies
-- **Multi-Dataset Evaluation**: Support for 8+ real-world social network and citation network datasets
-- **Comparative Benchmarking**: Extensive experimental comparison across multiple baseline models and attack scenarios
+This repository presents a comprehensive framework for studying adversarial attacks against learning-based community search models in networks. Community search is a fundamental problem in graph analysis, aiming to identify densely connected subgraphs (communities) centered at query nodes. This project systematically investigates the vulnerability of state-of-the-art Graph Neural Network (GNN)-based community detection methods to evasion attacks and proposes robust countermeasures. The framework enables systematic evaluation of adversarial robustness in community search.
 
 ## Supported Models
 
@@ -227,21 +220,4 @@ Models are evaluated on:
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-- PyTorch Geometric team for excellent graph neural network implementations
-- SNAP database for providing benchmark network datasets
-- All researchers who contributed to community detection and adversarial robustness literature
-
-
-## Changelog
-
-### Version 1.1.3
-- Initial release with 7 victim models
-- EVA attack framework
-- Support for 8 benchmark datasets
-- Comprehensive evaluation metrics
-
----
 
